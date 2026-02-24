@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 
-const DB_URL = "URL......For__Next__Class"
+dotenv.config();
+
+const DB_URL = process.env.DB_URL;
 
 const connectToDatabase = async() => {
     try {
