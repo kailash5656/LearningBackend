@@ -1,16 +1,9 @@
-const mongoose = require("mongoose");
+const User = require("../model/userModel")
 
-const userSchema = mongoose.Schema({
-    firstName:{
-        type: String,
-        required: true
-    },
-    email: {
-        type: String,
-        reuired: true
-    },
-    password: {
-        type: String,
-        required: true
-    },
-})
+const register = async (req, res) => {
+    
+} 
+
+module.exports = {
+    register
+}
