@@ -14,7 +14,7 @@ const userSchema =  mongoose.Schema({
         required: true,
         
     },
-    pssword: {
+    password: {
         type: String,
         required: true
 
@@ -25,4 +25,4 @@ const userSchema =  mongoose.Schema({
         default: false
     }
 });
-exports.User = mongoose.model('User', userSchema);
+module.exports = mongoose.model('User', userSchema);

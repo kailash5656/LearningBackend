@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 connectToDatabase();
 
-app.use('api/auth', require("./routes/userRoutes"))
+app.use('/api/auth', require("./routes/userRoutes"))
 
 const PORT = process.env.PORT;
 
